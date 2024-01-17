@@ -1,6 +1,7 @@
 # Get all critical level vulnerabilities for an organization using Falcon Spotlight
 from datetime import datetime, timedelta
 import json
+import sys
 import config
 from falconpy import SpotlightVulnerabilities, Hosts
 import pandas as pd
@@ -41,7 +42,10 @@ for i in range(len(resources)):
 
 # Identify Spotlight Subscribers
 # May benefit from accessing a current parent_children_report via API 
-df = pd.read_csv('<spotlight subscribers csv>')
+
+parent_children_report = sys.argv[1]
+
+df = pd.read_csv(parent_children_report)
 spot = df.loc[df['Falcon Module Subscriptions'].str.contains('Spotlight')] 
 
 # Spotlight Subscribers are placed in a list
