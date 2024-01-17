@@ -33,6 +33,9 @@ The main script CRIT-VULN.py will JSON fromat all the critical vulnerabilities a
 ## Install Falconpy and dependencies:
 `python3 -m pip install crowdstrike-falconpy pandas`
 
+## Create a Falcon API Client with a Client ID and Secret
+Place the client ID and secret in the config-empty.py file
+
 ## Export Parent_Child_Report from the Falcon Flight Control Module
 The report contains Spotlight Subscriber information under the Falcon Module Subscriptions column
 
