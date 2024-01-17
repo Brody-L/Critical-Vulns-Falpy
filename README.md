@@ -1,5 +1,5 @@
-# Critical-Vulns-Falconpy
-The main script CRIT-VULN.py will JSON fromat all the critical vulnerabilities and the effected products of each Asset ID for a list of Customer IDs
+# GET-CRIT-VULN.py
+The main script GET-CRIT-VULN.py will JSON fromat all the critical vulnerabilities and the effected products of each Asset ID for a list of Customer IDs
 
 ## Output Format: 
 ```
@@ -41,3 +41,4 @@ The report contains Spotlight Subscriber information under the Falcon Module Sub
 
 ## Usage: 
 `python CRIT-VULN.py parent_child_report_<date>.csv`
+
