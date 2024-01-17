@@ -42,3 +42,5 @@ The report contains Spotlight Subscriber information under the Falcon Module Sub
 ## Usage: 
 `python CRIT-VULN.py parent_child_report_<date>.csv`
 
+# GET-ACTIVE.py
+Retrieves all devices that have been active over the last 30 days by customer
