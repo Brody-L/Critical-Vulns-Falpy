@@ -9,6 +9,9 @@ import dateparser
 
 app = typer.Typer()
 
+if not config.FALCON_CLIENT_ID or not config.FALCON_CLIENT_SECRET:
+    raise ValueError("Please provide a valid Falcon Client ID and Client Secret in the config.py file")
+
 # initialize Hosts service collection
 falcon = Hosts(client_id= config.FALCON_CLIENT_ID,
               client_secret = config.FALCON_CLIENT_SECRET)
