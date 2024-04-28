@@ -17,7 +17,7 @@ falcon = Hosts(client_id= config.FALCON_CLIENT_ID,
               client_secret = config.FALCON_CLIENT_SECRET)
 
 @app.command()
-def retrieve_vulnerabilities(old_date: str, output_file_name: str = ''):
+def retrieve_vulnerabilities(old_date: str = '30 days ago', output_file_name: str = ''):
     # date 30 days ago from today 
     start_date = dateparser.parse(old_date)
     if not start_date:
